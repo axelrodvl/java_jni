@@ -3,12 +3,11 @@ public class Main {
         System.loadLibrary("Main");
     }
 
-    public native void hello();
-    public native int intMethod(int i);
+    public static native void hello();
+    public static native int intMethod(int i);
 
     public static void main(String[] args) {
-        Main main = new Main();
-        main.hello();
-        System.out.println(main.intMethod(2));
+        Main.hello();
+        System.out.println(Main.intMethod(2));
     }
 }
